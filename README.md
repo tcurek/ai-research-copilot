@@ -6,7 +6,7 @@ A web-based AI research assistant powered by agents, RAG, and MCP tools.
 
 AI Research Copilot is a modular web app that lets you:
 
-- Chat with an intelligent assistant
+- ChatContainer with an intelligent assistant
 - Choose from multiple LLMs (OpenAI, Anthropic, Ollama)
 - Enable RAG to ground responses in your own documents
 - Activate MCP tools (e.g., web search, filesystem)
