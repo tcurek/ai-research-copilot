@@ -1,6 +1,5 @@
 import { createTool } from "@mastra/core/tools";
 import { z } from "zod";
-import { env }  from "node:process";
 
 export const WebSearchTool = createTool({
     id: "web-search-tool",
@@ -17,7 +16,7 @@ export const WebSearchTool = createTool({
       const { query } = context;
    
       const response = await fetch(`https://api.tavily.com/search?q=${encodeURIComponent(query)}`, {
-        headers: { "Authorization": `Bearer ${env.TAVILY_API_KEY}` }
+        headers: { "Authorization": `Bearer ${process.env.TAVILY_API_KEY}` }
       });
       const json = await response.json();
    
